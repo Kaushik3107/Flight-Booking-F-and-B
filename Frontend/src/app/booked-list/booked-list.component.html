@@ -1,0 +1,10 @@
+<div class="booked-list">
+  <h2>Your Booked Flights</h2>
+  <div *ngFor="let flight of bookedFlights">
+    <p>
+      <strong>{{ flight.firstName }} {{ flight.lastName }}</strong> -
+      {{ flight.source }} to {{ flight.destination }} on {{ flight.date }} at
+      {{ flight.time }}
+    </p>
+  </div>
+</div>

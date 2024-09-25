@@ -1,0 +1,43 @@
+<div class="form-container">
+  <h2>Book a Flight</h2>
+  <form (ngSubmit)="bookFlight()">
+    <div>
+      <label>First Name</label>
+      <input type="text" [(ngModel)]="firstName" name="firstName" required />
+    </div>
+    <div>
+      <label>Last Name</label>
+      <input type="text" [(ngModel)]="lastName" name="lastName" required />
+    </div>
+    <div>
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" name="email" required />
+    </div>
+    <div>
+      <label>Mobile No</label>
+      <input type="text" [(ngModel)]="mobile" name="mobile" required />
+    </div>
+    <div>
+      <label>Source</label>
+      <input type="text" [(ngModel)]="source" name="source" required />
+    </div>
+    <div>
+      <label>Destination</label>
+      <input
+        type="text"
+        [(ngModel)]="destination"
+        name="destination"
+        required
+      />
+    </div>
+    <div>
+      <label>Date</label>
+      <input type="date" [(ngModel)]="date" name="date" required />
+    </div>
+    <div>
+      <label>Time</label>
+      <input type="time" [(ngModel)]="time" name="time" required />
+    </div>
+    <button type="submit" mat-button>Submit</button>
+  </form>
+</div>
